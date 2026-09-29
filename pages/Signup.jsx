@@ -46,7 +46,7 @@ const Signup = () => {
         setMessage("User registered successfully!");
 
         setTimeout(() => {
-          navigate("/signin");
+          navigate("/login");
         }, 1000);
 
         setFormData({
