@@ -27,8 +27,11 @@ const Signup = () => {
     setLoading(true);
     setMessage("");
 
+    const BASE_URL =
+      import.meta.env.VITE_API_URL || "https://signuploginbackend.vercel.app";
+
     try {
-      const response = await fetch("http://localhost:5000/api/signup", {
+      const response = await fetch(`${BASE_URL}/api/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
