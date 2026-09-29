@@ -45,6 +45,10 @@ const Signup = () => {
         setIsSuccess(true);
         setMessage("User registered successfully!");
 
+        setTimeout(() => {
+          navigate("/signin");
+        }, 1000);
+
         setFormData({
           name: "",
           email: "",
